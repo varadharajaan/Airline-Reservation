@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+ext {
+    javaLanguageLevel = '11'
+}
+sourceCompatibility = '11'
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
